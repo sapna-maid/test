@@ -1,0 +1,113 @@
+{
+	"productCode": "CADMIN",
+	"productDisplayName": "Common Admin",
+	"productOwnerVerified": true,
+	"status": "Unknown what this is?",
+	"oktaGroupID": "OKTA Group ID",
+	"prodctOwner": "Denise.Olsen@cdk.com",
+	"productVersion": "1.0.0",
+	"features": [{
+			"featureCode": "ADMNESS",
+			"enabledImmediately": true,
+			"featureDisplayName": "Administration",
+			"packages": ["FO EDGE", "DEAL ADMIN"],
+			"cdkOnlyFeature": false,
+			"permissions": [{
+					"permissionCode": "MNGSTR",
+					"permissionDisplayName": "Manage Stores",
+					"restricted": true,
+					"roleTemplates": ["Sales Person", "Used Car Manager", "Executive"],
+					"resources": []
+				},
+				{
+					"permissionCode": "MNGEINFO",
+					"permissionDisplayName": "Manage Enterprise Information",
+					"restricted": false,
+					"roleTemplates": ["Sales Person", "Used Car Manager", "Executive"],
+					"resources": []
+				},
+				{
+					"permissionCode": "MNGROL",
+					"permissionDisplayName": "Manage Roles",
+					"restricted": false,
+					"roleTemplates": ["Sales Person", "Used Car Manager", "Executive"],
+					"resources": [{
+							"resourceCode": "CFGROL",
+							"resourceDisplayName": "Configure Roles",
+							"toggleable": true
+						},
+						{
+							"resourceCode": "CFGRLDTL",
+							"resourceDisplayName": "View Role Details",
+							"toggleable": false
+						}
+					]
+				},
+				{
+					"permissionCode": "MNGEMLTEMPLATESPERM",
+					"permissionDisplayName": "Manage Email Templates",
+					"restricted": false,
+					"roleTemplates": ["Parts Associate", "Title Clerk", "Executive"],
+					"resources": []
+				},
+				{
+					"permissionCode": "MNGUSR",
+					"permissionDisplayName": "Manage Users",
+					"restricted": false,
+					"roleTemplates": ["Parts Associate", "Title Clerk", "Executive"],
+					"resources": []
+				},
+				{
+					"permissionCode": "CADMIN",
+					"permissionDisplayName": "Common Administration",
+					"restricted": false,
+					"roleTemplates": ["Parts Associate", "Title Clerk", "Executive"],
+					"resources": []
+				}
+			]
+		},
+		{
+			"featureCode": "IAMUSERMNGMT",
+			"enabledImmediately": true,
+			"featureDisplayName": "User Management",
+			"packages": [],
+			"CDKOnlyFeature": "true",
+			"permissions": [{
+					"permissionCode": "EXPORTACTIVITYHISTORY",
+					"permissionDisplayName": "Export User Activity History Report",
+					"restricted": false,
+					"roleTemplates": ["Parts Associate", "Title Clerk", "Executive"],
+					"resources": []
+				},
+				{
+					"permissionCode": "MRGUSR",
+					"permissionDisplayName": "Merge User Accounts",
+					"restricted": false,
+					"roleTemplates": ["Parts Associate", "Title Clerk", "Executive"],
+					"resources": []
+				},
+				{
+					"permissionCode": "VIEWEMAILSENTSTATUS",
+					"permissionDisplayName": "View Email Sent Status",
+					"restricted": false,
+					"roleTemplates": ["Parts Associate", "Title Clerk", "Executive"],
+					"resources": []
+				},
+				{
+					"permissionCode": "RESENDUSEREMAILPERM",
+					"permissionDisplayName": "Resend Emails to Users",
+					"restricted": false,
+					"roleTemplates": ["Sales Person", "Used Car Manager", "Executive"],
+					"resources": []
+				},
+				{
+					"permissionCode": "LNKUSERALTID",
+					"permissionDisplayName": "Link\/Unlink User Alternate IDs",
+					"restricted": false,
+					"roleTemplates": ["Sales Person", "Used Car Manager", "Executive"],
+					"resources": []
+				}
+			]
+		}
+	]
+}
